@@ -1,0 +1,27 @@
+from pygame import *
+
+'''class Gamesprite(sprite.Sprite):
+
+    def __init__(self,pos_x,pos_y,speed,size):
+        sprite.Sprite.__init__(self)
+        ball = Surface(size)
+        ball.fill(100,100,100)
+        self.image = transfosrm.scale(circle.size)
+        self.size = size
+        self.speed = speed
+        self.vector = Vector2(1,1).normalize()
+    def reset(self):
+        window.blit(self.image,(self.rect.x,self.rect.y))
+
+class player(Gamesprite):
+    def update(self):
+        key_pressed = key.get_pressed()
+        if key_pressed[K_a] and hero.rect.x > 0:
+            self.rect.x -= self.speed
+        if key_pressed[K_d] and hero.rect.x < 630:
+            self.rect.x += self.speed
+        key_pressed = key.get_pressed()'''
+
+window = display.set_mode((700,500), flags = RESIZABLE)
+display.set_caption('ping pong')
+background = transform.scale(image.load('pingpong.png'),(700,500))
